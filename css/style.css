@@ -4,8 +4,29 @@ body {
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
-.floating, .bootbody {
+#floating, #bootbody {
     margin-top: 5%;
+}
+
+.btn {
+    width: 20%;
+}
+
+@media screen and (max-width:1024px) {
+    #floating, #bootbody {
+        margin-top: 8%;
+    }    
+    .btn {
+        width: 30%;
+    }
+}
+@media screen and (max-width:720px) {
+    #floating, #bootbody {
+        margin-top: 12%;
+    }    
+    .btn {
+        width: 50%;
+    }
 }
 
 a, 
@@ -17,19 +38,31 @@ a:focus{
 }
 
 h1 {
-    text-align: center;
     font-size: 3em;
+    text-align: center;
 }
 
+#floating h1 {
+    margin-bottom: 3%; 
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+
 p {
-    width: 70%;
-    margin: 0 auto;
-    line-height: 1.3;
+    line-height: 1.35;
     text-align: justify;
 }
 
-img{
+#floating img{
     width: 30%;
+}
+
+#floating .breadcrumb {
+    float: right;
 }
 
 .first-img {
@@ -50,8 +83,12 @@ img{
     text-transform: uppercase;
 }
 
-.jumbotron {
-    margin: 0 3%;
+.breadcrumb {
+    background-color: transparent;
+    margin-bottom: 1%;
+}
+.container-fluid .jumbotron {
+    margin: 0 3% 2%;
     background-color: #470ab8;
     color: white;
     text-align: center;
@@ -63,7 +100,6 @@ img{
     margin-bottom: 5%;
 }
 
-
 button a, 
 button a:hover,
 button a:active,
@@ -73,6 +109,19 @@ button a:focus{
     text-decoration: none;
 }
 
-.breadcrumb {
-    background-color: transparent;
+
+
+
+.thumbnail {
+    width: 100%;
+    margin: 0 auto 3%;
+    background-color: white;
+    filter: grayscale(100)
+}
+
+.thumbnail:hover {
+    filter: grayscale(0);
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
 }
