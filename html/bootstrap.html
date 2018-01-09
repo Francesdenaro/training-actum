@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/style.css"/>
+</head>
+<body class="bootbody">
+
+    <!--
+        NAVBAR
+    -->
+    <header>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-collapse" aria-expanded="false"> <!--toggle visibility of nav for low width is -->
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="#" class="navbar-brand">Bootstrap</a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-nav-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="../index.html"><i class="glyphicon glyphicon-home"></i> Home <span class="sr-only">(current)</span></a></li>
+                        <li><a href="floating.html"><i class="glyphicon glyphicon-th-large"></i> Floating</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="glyphicon glyphicon-th-list"></i> Other links</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Link one</a></li>
+                                <li><a href="#">Link two</a></li>
+                                <li><a href="#">Link three</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>        
+        </nav>
+    </header>
+
+
+    <!--
+        CONTENT
+    -->
+
+    <ol class="breadcrumb">
+        <li><a href="../index.html">Home</a></li>
+        <li class="active">Bootstrap</li>
+    </ol>
+
+    <main class="container-fluid">
+        <div class="jumbotron">
+            <h1>Bootstrap 3 Page</h1>
+            <p>Click the button below to see Bootstrap v4.0 </p>
+            <button class="btn btn-primary"><a href="#">Bootstrap 4</a></button>
+        </div>
+    </main>
+    
+    <div class="container-fluid"></div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>

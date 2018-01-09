@@ -4,7 +4,7 @@ body {
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
-.floating {
+.floating, .bootbody {
     margin-top: 5%;
 }
 
@@ -51,7 +51,7 @@ img{
 }
 
 .jumbotron {
-    margin: 8% 3% 3%;
+    margin: 0 3%;
     background-color: #470ab8;
     color: white;
     text-align: center;
@@ -71,4 +71,8 @@ button a:visited,
 button a:focus{
     color: white;
     text-decoration: none;
+}
+
+.breadcrumb {
+    background-color: transparent;
 }
