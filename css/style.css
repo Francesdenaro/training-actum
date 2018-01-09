@@ -1,7 +1,19 @@
 body {
-    background-color: #ddbb7a;
-    color: #f3f3f3;
-    
+    background-color: #070979;
+    color: #fff;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.floating {
+    margin-top: 5%;
+}
+
+a, 
+a:hover,
+a:active,
+a:visited,
+a:focus{
+    color: white;
 }
 
 h1 {
@@ -11,7 +23,9 @@ h1 {
 
 p {
     width: 70%;
-    margin: 2% auto;
+    margin: 0 auto;
+    line-height: 1.3;
+    text-align: justify;
 }
 
 img{
@@ -20,12 +34,41 @@ img{
 
 .first-img {
     float: right;
-    margin: 3%;
+    margin: 2%;
 }
 
 .second-img {
     float: left;
-    margin: 3%;
+    margin: 2%;
     margin-left: 0;
 }
 
+
+/* BOOTSTRAP */
+
+.navbar-brand {
+    text-transform: uppercase;
+}
+
+.jumbotron {
+    margin: 8% 3% 3%;
+    background-color: #470ab8;
+    color: white;
+    text-align: center;
+}
+
+.jumbotron p {
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+
+button a, 
+button a:hover,
+button a:active,
+button a:visited,
+button a:focus{
+    color: white;
+    text-decoration: none;
+}
