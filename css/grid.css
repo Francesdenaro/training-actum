@@ -1,0 +1,109 @@
+body {
+    background-color: black;
+    color: white;
+    font-size: 1.2em;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    margin: 15.75em 2em;
+}
+
+h1 {
+    position: fixed;
+    top:0;
+    left:1em;
+    right: 1em;
+    padding: 3em 0;
+    width: inherit;
+    text-align: center;
+    text-transform: uppercase;
+    background: rgb(143, 24, 24);
+    opacity: 0.5;
+}
+
+h4 {
+    position: fixed;
+    top: 10em;
+    right: 5em;
+    text-align: right;
+    display: inline-block;
+    opacity: 0.5;
+
+}
+
+
+.row,
+.column {
+    box-sizing: border-box;
+}
+
+.row:before,
+.row:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.row {
+    display: block;
+}
+
+.column {
+    position: relative;
+    float: left;
+    width: 100%;
+    margin-top: 1em;
+    padding: 3em 0;
+    text-align: center;
+    background: rgb(65, 65, 65);
+    border: 1px solid #8a8a8a;
+    opacity: 0.7;
+}
+
+@media only screen and (min-width: 720px){
+    .col1 {
+        width: calc(100%/12)
+    }
+
+    .col2 {
+        width: calc(100%/6)
+    }
+
+    .col3 {
+        width: calc(100%/4);
+    }
+
+    .col4 {
+        width: calc(100%/3);
+    }
+
+    .col5 {
+        width: calc(100%*(5/12));
+    }
+
+    .col6 {
+        width: calc(100%/2);
+    }
+
+    .col7 {
+        width: calc(100%*(7/12));
+    }
+
+    .col8 {
+        width: calc(100%*(8/12));
+    }
+
+    .col9 {
+        width: calc(100%*(9/12));
+    }
+
+    .col10 {
+        width: calc(100%*(10/12));
+    }
+
+    .col11 {
+        width: calc(100%*(11/12));
+    }
+
+    .col12 {
+        width: 100%;
+    }
+}
