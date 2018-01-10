@@ -12,8 +12,10 @@ img {
     margin: 1.5%;
     box-sizing: border-box;
     border: 3px solid white;
-    border-radius: 3px;
     opacity: 0.5;
+    transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -webkit-transition: 0.5s all;
 }
 
 h1 {
@@ -72,7 +74,10 @@ p {
 
 img.big-img {
     width: 80%;
-    margin: 3% 10%;;
+    margin: 3% 10%;
+    transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -webkit-transition: 0.5s all;
 
 }
 
@@ -92,7 +97,7 @@ button {
     height: 2em;
     transition: 0.2s all;
     -moz-transition: 0.2s all;
-    -webkit-transition: 0.5s all;
+    -webkit-transition: 0.2s all;
 }
 
 button:active {

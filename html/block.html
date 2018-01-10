@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Block | Inline | Box Model </title>
+    <link rel="stylesheet" href="../css/styleblock.css">
+</head>
+<body id="blockinline">
+    <h1>Differences between block, inline and others</h1>
+    <button type="button">show elements</button>
+    <div id="wrapper">
+        <span class="inl">This is a span, an inline element. There will not be a line break after it</span>
+        <span class="inl-block">This is a span displayed as inline-block element, it act like an inline but its possible to set box-model properties </span>
+        <div class="block"> This is a div, a block element used as a container. It will automatically create a line break </div>
+        <div class="img-wrap"><img src="../images/inline.png" alt="inline"> Images are inline elements</div> 
+        <p>&lt;p&gt;Paragraph are block elements&lt;/p&gt;</p>
+        <div class="floatdiv float1">Div can also</div>
+        <div class="floatdiv float2">be showed as inline</div>
+        <div class="floatdiv float3">with</div>
+        <div class="floatdiv float4"> float property</div>
+        <div class="floatdiv float5">on the left...</div>
+        <div class="floatright1">..or on the</div>
+        <div class="floatright2">right</div>
+    </div>
+    <script src="../js/block.js"></script>
+</body>
+</html>
