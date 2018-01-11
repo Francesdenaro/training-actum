@@ -1,0 +1,145 @@
+@keyframes radius-in {
+  0% {
+    border-radius: 100%; }
+  40% {
+    border-radius: 0; }
+  60% {
+    border-radius: 0; }
+  100% {
+    border-radius: 100%; } }
+@keyframes radius-out {
+  0% {
+    border-radius: 0; }
+  40% {
+    border-radius: 100%; }
+  60% {
+    border-radius: 100%; }
+  100% {
+    border-radius: 0; } }
+@keyframes rolling {
+  0% {
+    transform: rotate(-180deg); }
+  40% {
+    transform: rotate(0deg); }
+  60% {
+    transform: rotate(180deg); }
+  100% {
+    transform: rotate(360deg); } }
+@keyframes scroll {
+  0% {
+    left: 9%; }
+  50% {
+    left: 91%; }
+  100% {
+    left: 9%; } }
+body {
+  background-color: #ffb300;
+  margin: 0;
+  text-align: center; }
+
+h1 {
+  color: #3a3838;
+  text-align: center;
+  font-size: 3em;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+.bars {
+  position: relative;
+  left: 9%;
+  top: 3em;
+  height: 1.5em;
+  width: 4em;
+  border-radius: 12%;
+  background-color: #3a3838;
+  animation: scroll 5s infinite ease-in; }
+
+.bar2 {
+  top: 32em;
+  animation: scroll 4.5s infinite ease-in; }
+
+.container {
+  text-align: center;
+  width: auto; }
+
+.circle {
+  border-radius: 50%;
+  float: left;
+  height: 10em;
+  width: 10em;
+  margin-top: 9%;
+  margin-left: 18%;
+  border: 5px solid #940e0e;
+  background-color: transparent;
+  animation: rolling 2.5s infinite linear, radius-out 2.5s infinite ease-in-out;
+  -moz-animation: rolling 2.5s infinite linear, radius-out 2.5s infinite ease-in-out;
+  -webkit-animation: rolling 2.5s infinite linear, radius-out 2.5s infinite ease-in-out;
+  -o-animation: rolling 2.5s infinite linear, radius-out 2.5s infinite ease-in-out;
+  -ms-animation: rolling 2.5s infinite linear, radius-out 2.5s infinite ease-in-out; }
+  .circle:nth-of-type(2) {
+    animation: rolling 4s infinite linear, radius-out 4s infinite ease-in-out;
+    -moz-animation: rolling 4s infinite linear, radius-out 4s infinite ease-in-out;
+    -webkit-animation: rolling 4s infinite linear, radius-out 4s infinite ease-in-out;
+    -o-animation: rolling 4s infinite linear, radius-out 4s infinite ease-in-out;
+    -ms-animation: rolling 4s infinite linear, radius-out 4s infinite ease-in-out; }
+  .circle:nth-of-type(3) {
+    animation: rolling 6.5s infinite linear, radius-out 6.5s infinite ease-in-out;
+    -moz-animation: rolling 6.5s infinite linear, radius-out 6.5s infinite ease-in-out;
+    -webkit-animation: rolling 6.5s infinite linear, radius-out 6.5s infinite ease-in-out;
+    -o-animation: rolling 6.5s infinite linear, radius-out 6.5s infinite ease-in-out;
+    -ms-animation: rolling 6.5s infinite linear, radius-out 6.5s infinite ease-in-out; }
+
+.circle:last-of-type {
+  margin-right: 0; }
+
+@media only screen and (max-width: 1239px) {
+  .circle {
+    float: none;
+    margin-top: 10%;
+    margin-left: 15%; }
+
+  .container {
+    margin-top: 5%; }
+
+  .bar2 {
+    top: 3em; } }
+@media only screen and (max-width: 640px) {
+  .circle {
+    position: relative;
+    left: 18%;
+    float: none;
+    margin-left: 12%; } }
+@media only screen and (max-width: 640px) {
+  .circle {
+    position: relative;
+    left: 18%;
+    float: none;
+    margin-left: 12%; }
+
+  .bar2 {
+    top: 45em; } }
+.medium {
+  box-sizing: border-box;
+  border: 5px solid #940e0e;
+  float: left;
+  height: 5em;
+  width: 5em;
+  animation: radius-in 5s infinite ease-in;
+  -moz-animation: radius-in 5s infinite ease-in;
+  -webkit-animation: radius-in 5s infinite ease-in;
+  -o-animation: radius-in 5s infinite ease-in;
+  -ms-animation: radius-in 5s infinite ease-in; }
+
+.tiny {
+  box-sizing: border-box;
+  border: 1px solid #940e0e;
+  float: left;
+  height: 2.18em;
+  width: 2.18em;
+  opacity: 0.3;
+  animation: radius-out 1s infinite ease-in;
+  -webkit-animation: radius-out 1s infinite ease-in;
+  -moz-animation: radius-out 1s infinite ease-in;
+  -o-animation: radius-out 1s infinite ease-in;
+  -ms-animation: radius-out 1s infinite ease-in; }
+
+/*# sourceMappingURL=animation.css.map */
