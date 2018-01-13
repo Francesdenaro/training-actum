@@ -78,4 +78,22 @@ a {
 .move, .footer {
   height: 50px; }
 
+.hide {
+  display: none;
+}
+button {
+  margin-top: 15px;
+  border-radius: 3px;
+  border: none;
+  height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #861717;
+  transition: all 0.5s;
+}
+button:hover {
+  color: #861717;
+  background-color: #fff;
+}
 /*# sourceMappingURL=flex.css.map */
